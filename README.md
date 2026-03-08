@@ -1,5 +1,16 @@
-📊 Insurance Company – Exploratory Data Analysis App
-📌 Descripción del proyecto
+# 📊 Insurance Company – Exploratory Data Analysis App
+![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue)
+
+![License](https://img.shields.io/badge/License-MIT-green)
+
+![Streamlit](https://img.shields.io/badge/Framework-Streamlit-red)
+
+![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen)
+
+![PRs](https://img.shields.io/badge/PRs-Welcome-orange)
+
+
+# 📌 Descripción del proyecto
 
 Este proyecto consiste en el desarrollo de una aplicación interactiva de análisis exploratorio de datos (EDA) utilizando Python y Streamlit.
 
@@ -9,150 +20,103 @@ A través de diferentes visualizaciones y análisis estadísticos, se exploran v
 
 Este proyecto fue desarrollado como parte del curso Python for Analytics.
 
-🎯 Objetivos del proyecto
+# 🎯 Objetivos del proyecto
 
-Aplicar técnicas de Análisis Exploratorio de Datos (EDA).
+. Aplicar técnicas de Análisis Exploratorio de Datos (EDA) de forma estructurada.
 
-Desarrollar una aplicación interactiva con Streamlit.
+. Desarrollar una aplicación web interactiva y profesional con Streamlit.
 
-Implementar Programación Orientada a Objetos (POO) en Python.
+. Implementar Programación Orientada a Objetos (POO) en Python para mantener un código limpio y escalable.
 
-Analizar factores que influyen en la renovación de pólizas de seguros.
+.  Analizar qué factores (ingresos, canales de venta, retrasos) influyen en la renovación de pólizas de seguros.
 
-Presentar visualizaciones que faciliten la interpretación de los datos.
+. Presentar visualizaciones claras que faciliten la toma de decisiones basada en datos.
 
-🗂 Dataset
+# 🧠 Estructura de la Aplicación
 
-El dataset utilizado contiene información de clientes de una compañía de seguros.
+La aplicación está dividida en un menú lateral intuitivo con 4 secciones principales:
 
-Algunas de las variables más relevantes incluyen:
+🏠 Home: Presentación general del proyecto, descripción del caso de estudio y tecnologías aplicadas.
 
-Variable	Descripción
-id	Identificador único del cliente
-perc_premium_paid_by_cash_credit	Porcentaje de la prima pagada en efectivo o crédito
-age_in_days	Edad del cliente en días
-Income	Ingreso mensual del cliente
-Count_3-6_months_late	Pagos atrasados entre 3 y 6 meses
-Count_6-12_months_late	Pagos atrasados entre 6 y 12 meses
-Count_more_than_12_months_late	Pagos atrasados mayores a 12 meses
-application_underwriting_score	Puntaje de evaluación del cliente
-no_of_premiums_paid	Número total de primas pagadas
-sourcing_channel	Canal de captación del cliente
-residence_area_type	Tipo de residencia (urbana o rural)
-premium	Valor de la prima
-renewal	Indica si el cliente renovó la póliza
-⚙️ Tecnologías utilizadas
+📋 Carga Dataset: Módulo dinámico para subir el archivo .csv, visualizar dimensiones y explorar las primeras filas del dataframe.
 
-El proyecto fue desarrollado utilizando las siguientes herramientas:
+🧮 Exploratory Data Analysis (EDA): El corazón de la aplicación, dividido en 7 pestañas:
 
-Python
+# Información general y tipos de datos.
 
-Pandas
+- Estadísticas descriptivas.
 
-NumPy
+- Distribución univariada de numéricas (Histogramas interactivos).
 
-Matplotlib
+- Detección de Outliers (Boxplots).
 
-Seaborn
+- Análisis de variables categóricas (Gráficos de barras).
 
-Streamlit
+- Análisis Bivariado (Scatter plots dinámicos y agrupación por categorías).
 
-Estas librerías permiten realizar análisis de datos, generar visualizaciones y crear aplicaciones web interactivas.
+- Matriz de Correlación térmica.
 
-🧠 Estructura del análisis
+# 📝 Conclusiones: Resumen de los hallazgos de negocio más importantes.
 
-La aplicación está dividida en diferentes secciones para facilitar la exploración del dataset:
+  📊 Principales Hallazgos de Negocio
 
-🏠 Home
+A partir del análisis exploratorio profundo, se lograron identificar los siguientes patrones clave:
 
-Presenta información general del proyecto, autor y tecnologías utilizadas.
+- Influencia del Ingreso: El nivel de ingresos mensuales (Income) del cliente tiene una influencia directa en su capacidad de pagar primas más altas.
 
-📋 Carga del Dataset
+- Impacto de la Morosidad: Los clientes con historial de retrasos (especialmente en los rangos de 3-6 y 6-12 meses) tienen una probabilidad drásticamente menor de renovar sus pólizas.
 
-Permite cargar el archivo CSV y visualizar:
+- Underwriting Score: Esta puntuación refleja con precisión el perfil de riesgo; a mayor score, suele haber mayor estabilidad en los pagos y renovaciones.
 
-Vista previa del dataset
+- Canales de Captación (sourcing_channel): El análisis bivariado sugiere que ciertos canales de reclutamiento generan clientes con mayor retención a largo plazo en la compañía.
 
-Número de filas y columnas
+- Geografía: El análisis por área de residencia (Urbana vs Rural) demuestra diferencias sutiles pero importantes en los volúmenes de primas recaudadas.
 
-🧮 Exploratory Data Analysis (EDA)
+🚀 Cómo ejecutar la aplicación localmente
 
-Incluye diferentes tipos de análisis:
+Si deseas correr este proyecto en tu propia computadora, sigue estos pasos:
 
-Información general del dataset
+# 1. Clonar el repositorio:
 
-Clasificación de variables numéricas y categóricas
+git clone [https://github.com/TU-USUARIO/insurance-renewal-analysis.git](https://github.com/TU-USUARIO/insurance-renewal-analysis.git)
 
-Estadísticas descriptivas
 
-Análisis de valores faltantes
-
-Distribución de variables numéricas
-
-Distribución de variables categóricas
-
-Relación entre variables numéricas y categóricas
-
-Relación entre variables categóricas
-
-Análisis dinámico del dataset
-
-Visualización de la renovación de pólizas
-
-📝 Conclusiones
-
-Se presentan los principales hallazgos obtenidos durante el análisis.
-
-📊 Principales hallazgos
-
-A partir del análisis exploratorio se identificaron algunos patrones importantes:
-
-El nivel de ingreso del cliente influye en la capacidad de pago de primas.
-
-Los clientes con más retrasos en pagos tienden a renovar menos sus pólizas.
-
-El underwriting score está relacionado con el riesgo del cliente.
-
-Algunos canales de captación generan clientes más propensos a renovar.
-
-Existen diferencias en el comportamiento de renovación entre zonas urbanas y rurales.
-
-🚀 Cómo ejecutar la aplicación
-
-Clonar el repositorio:
-
-git clone https://github.com/TU-USUARIO/insurance-renewal-analysis.git
-
-Entrar a la carpeta del proyecto:
+# 2. Entrar a la carpeta del proyecto:
 
 cd insurance-renewal-analysis
 
-Instalar las dependencias:
+
+# 3. Instalar las dependencias:
 
 pip install -r requirements.txt
 
-Ejecutar la aplicación:
+
+# 4. Ejecutar la aplicación en Streamlit:
 
 streamlit run app.py
-🌐 Aplicación desplegada
 
-La aplicación puede ejecutarse en línea a través de Streamlit Cloud.
 
-🔗 Link de la aplicación:
-(Agregar aquí el enlace cuando la app esté desplegada)
+# 🌐 Aplicación Desplegada
 
-📁 Estructura del proyecto
-insurance-renewal-analysis
+La aplicación ha sido desplegada exitosamente en la nube utilizando Streamlit Community Cloud.
+
+🔗 Link de la aplicación: (Reemplaza este texto con tu link real cuando despliegues la app)
+
+# 📁 Estructura del repositorio
+
+insurance-renewal-analysis/
 │
-├── app.py
-├── InsuranceCompany.csv
-├── requirements.txt
-├── logo1.png
-├── logo2.png
-├── .gitignore
-└── README.md
-👩‍💻 Autor
+├── app.py                   # Script principal de la aplicación Streamlit
+├── InsuranceCompany.csv     # Dataset utilizado para el análisis
+├── requirements.txt         # Dependencias del proyecto
+├── logo1.png                # Logo principal de la app
+├── logo2.png                # Logo del menú lateral
+├── .gitignore               # Archivos a ignorar por git
+└── README.md                # Documentación del proyecto (Este archivo)
 
-Stephany Xiomara Pachas Sánchez
-Curso: Python for Analytics
-Año: 2026
+
+# 👩‍💻 Autor
+
+# Stephany Xiomara Pachas Sánchez 📚 Curso: Python for Analytics
+
+# 📅 Año: 2026
